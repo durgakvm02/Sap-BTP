@@ -1,22 +1,13 @@
 # Getting Started
 
-Welcome to your new CAP project.
+# Product Shop Application Details.
 
-It contains these folders and files, following our recommended project layout:
+## Cds add data
+ 
+  * It will add the data in the CSV file inside data folder of db. db-->data-->csv
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`readme.md` | this getting started guide
+## cds watch
 
-## Next Steps
+  * start the server and listen to your file changes.
 
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start with your domain model, in a CDS file in `db/`
 
-## Learn More
-
-Learn more at <https://cap.cloud.sap>.

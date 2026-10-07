@@ -1,5 +1,14 @@
+#printhelloworld
 #GET http://localhost:4004/odata/v4/product/printhelloworld(input='Hello')
 
+#addition
 #GET http://localhost:4004/rest/product/addition(num1=5,num2=10)
 
-GET http://localhost:4004/rest/product/myFunction(category=2)
+#myFunction
+#GET http://localhost:4004/rest/product/myFunction(category=2)
+
+#product
+#GET http://localhost:4004/odata/v4/productshop/product
+
+#supplier
+GET http://localhost:4004/odata/v4/productshop/Supplier
