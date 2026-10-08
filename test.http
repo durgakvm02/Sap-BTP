@@ -8,7 +8,7 @@
 #GET http://localhost:4004/rest/product/myFunction(category=2)
 
 #product
-#GET http://localhost:4004/odata/v4/productshop/product
+ GET http://localhost:4004/odata/v4/productshop/product
 
 #supplier
-GET http://localhost:4004/odata/v4/productshop/Supplier
+#GET http://localhost:4004/odata/v4/productshop/Supplier
