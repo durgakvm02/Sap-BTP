@@ -10,4 +10,4 @@
 
    * Start the server and listen to your file changes.
 
-## namespace --> unique name to your application.   
+## namespace --> unique name to your application. 
