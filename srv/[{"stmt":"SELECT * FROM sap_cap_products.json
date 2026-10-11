@@ -1,0 +1,52 @@
+[
+    {
+        "stmt": "SELECT * FROM sap_cap_productshop_Product;",
+        "header": [
+            "ID",
+            "createdAt",
+            "createdBy",
+            "modifiedAt",
+            "modifiedBy",
+            "emission",
+            "rating",
+            "name",
+            "category",
+            "price",
+            "stock",
+            "criticality",
+            "supplier_Id"
+        ],
+        "rows": [
+            [
+                "5c223945-68af-41f8-9405-ee45e2b648f6",
+                "2026-10-09T14:36:29.134Z",
+                "anonymous",
+                "2026-10-09T14:36:29.134Z",
+                "anonymous",
+                "30",
+                "4",
+                "Audi",
+                "B",
+                "20000",
+                "121",
+                "2",
+                "1"
+            ],
+            [
+                "8aa82492-86bb-498b-abee-0e1bea65e296",
+                "2026-10-09T14:36:29.134Z",
+                "anonymous",
+                "2026-10-09T14:36:29.134Z",
+                "anonymous",
+                "100",
+                "5",
+                "Tata",
+                "A",
+                "32500",
+                "780",
+                "3",
+                "3"
+            ]
+        ]
+    }
+]

@@ -8,7 +8,33 @@
 #GET http://localhost:4004/rest/product/myFunction(category=2)
 
 #product
- GET http://localhost:4004/odata/v4/productshop/product
+ #GET http://localhost:4004/odata/v4/productshop/product
 
-#supplier
-#GET http://localhost:4004/odata/v4/productshop/Supplier
+ #GET http://localhost:4004/odata/v4/productshop/product?$expand=supplier&$select=rating,name
+
+ #GET http://localhost:4004/odata/v4/productshop/product?$expand=conversion
+
+ #supplier
+ #GET http://localhost:4004/odata/v4/productshop/Supplier
+
+ #GET http://localhost:4004/odata/v4/productshop/Supplier?$expand=product
+
+ #MyFunction
+ #GET http://localhost:4004/odata/v4/productshop/MyFunction(name='BMW')
+
+ #MyAction
+ // POST  http://localhost:4004/odata/v4/productshop/MyAction
+  //Content-Type: application/json
+
+  //{
+    //"name" : "Audi"
+  //}
+
+  #orderproduct
+  POST  http://localhost:4004/odata/v4/productshop/product
+  Content-Type: application/json
+
+  {
+    "name" : "Audi" ,
+    "stock" : "15"
+  }

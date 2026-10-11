@@ -1,0 +1,19 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.productmanager",
+      "description": "productmanager"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "productmanager",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.productmanager"
+      ],
+      "attribute-references": []
+    }
+  ]
+}

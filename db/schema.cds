@@ -1,24 +1,40 @@
 namespace sap.cap.productshop;
 
-aspect carbonemission{
+using {
+    cuid,
+    managed
+} from '@sap/cds/common';
+
+aspect carbonemission {
     emission : Integer;
-    rating : String;
+    rating   : String;
 }
 
 type pricecost {
     price : Integer;
     stock : Integer;
 }
-entity Product : carbonemission {
-    key ID       : Integer;
-        name     : String;
-        category : String;   
-        cost : pricecost;       
+
+entity Product : cuid, managed, carbonemission {
+    name        : String;
+    category    : String;
+    price       : Integer;
+    stock       : Integer;
+    criticality : Integer;
+    supplier    : Association to one Supplier;
+    conversion  : Composition of many {
+                      key ID        : UUID;
+                          timestamp : String;
+                          processor : String;
+                          message   : String;
+                  }
 }
 
 entity Supplier {
-    key Id    : String;
-        name  : String(100);
-        city  : String(100);
-        phone : String(100);
+    key Id      : String;
+        name    : String(100);
+        city    : String(100);
+        phone   : String(100);
+        product : Association to many Product
+                      on product.supplier = $self;
 }

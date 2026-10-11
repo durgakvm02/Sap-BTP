@@ -15,7 +15,7 @@
  * ╚═══════════════════════════════════════════════════════════════════════╝ *
  ******************************************************************************/
 
-sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
+sap.ui.define(['sap/fe/test/ObjectPage'], function(ObjectPage) {
     'use strict';
 
     const CustomPageDefinitions = {
@@ -23,10 +23,10 @@ sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
         assertions: {}
     };
 
-    return new ListReport(
+    return new ObjectPage(
         {
-            appId: 'ns.productshop',
-            componentId: 'productList',
+            appId: 'ns.products',
+            componentId: 'productObjectPage',
             contextPath: '/product'
         },
         CustomPageDefinitions

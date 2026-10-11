@@ -1,4 +1,4 @@
-ID,name,category,cost_price,cost_stock,emission,rating
-1,Bmw,1,2322,12,20000,A+
-2,Audi,2,2344,17,30000,B+
-3,Hyundai,3,2344,65,45000 ,C+
+ID,name,category,price,stock,criticality,supplier_Id,emission,rating
+5c223945-68af-41f8-9405-ee45e2b648f6,Audi,B,20000,121,2,1,30,4
+004289b6-e33f-4bac-8d34-83edee98ad9e,BMW,C,42300,132,1,2,60,2
+8aa82492-86bb-498b-abee-0e1bea65e296,Tata,A,32500,80,3,3,100,5
